@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Decor Store - Bootstrap</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-evenly ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Home Decore</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="container-fluid w-25 justify-content-center">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Best Sellers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Indoor</a></li>
+                  <li><a class="dropdown-item" href="#">Outdoor</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Types
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Plants & Botanicals</a></li>
+                  <li><a class="dropdown-item" href="#">Lights & Lamps</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- landing page -->
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="https://m.media-amazon.com/images/I/61r9id5-2eL.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://img.freepik.com/free-photo/sofa-living-room-decorated-with-brazilian-folklore-design_23-2150794077.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item "data-bs-interval="2000">
+            <img src="https://img.freepik.com/premium-photo/image-white-living-room-with-furniture_875722-17511.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+<!--  blockqoute -->
+  <div class="container border mt-5 p-2 text-center" >
+    <figure>
+        <blockquote class="blockquote">
+          <p>Have nothing in your house that you do not know to be useful, or believe to be beautiful.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+            George R.R. Martin in <cite title="Source Title">A Song of Ice and Fire</cite>
+        </figcaption>
+      </figure>
+  </div>
+
+
+  <!-- plants -->
+  <div class="container mt-5 ">
+    <h1 class="text-center">
+      Browse From  
+      <small class="text-danger">PLANTS & BOTANICALS</small>
+    </h1>
+  </div>
+
+  <!-- plant display -->
+  <div class="container-fluid mt-5 mb-5 d-flex flex-wrap justify-content-evenly">
+    <div class="card" style="width: 15rem;  ">
+      <img  src="https://res.cloudinary.com/makerinc/image/fetch/c_fill,g_auto,f_auto,q_auto:best,fl_preserve_transparency,dpr_1,w_375/https%3A%2F%2Fwww.whisperinghomes.com%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsola_zinnia_wild_tangerine_orange_flower_set_of_5_hover.jpg%3Fdate%3D10%2F03%2F2024" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Sola Zinnia Wild Tangerine Orange Flower Set of 5</p>
+        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Know More
+        </button>
+      </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            What better than a lively floral display in your home decor? Presenting this beautiful artificial shola flower that works as a promising decor accent wherever incorporated in your living space. The intriguing pattern and soft texture add a nice touch to any interior palette or theme decor. Ideal to blend in with any furnishing type. You can use it in your living room, bedroom, or hallways. You can also choose it for gifting your loved ones.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+           <a href="https://www.whisperinghomes.com/dry-grass-flowers/flower-bunch/dried-flower-bouquets?QNConfigId=jUnXLbBLO&QNTabId=navigation&QNCategoryId=CLLV8rl8N&QNProductCategoryId=CLLV8rl8N&QNProductId=WH-09-007"> <button type="button" class="btn btn-outline-danger">Buy Now</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="width: 15rem;  ">
+      <img  src="https://res.cloudinary.com/makerinc/image/fetch/c_fill,g_auto,f_auto,q_auto:best,fl_preserve_transparency,dpr_1,w_180/https%3A%2F%2Fwww.whisperinghomes.com%2Fmedia%2Fcatalog%2Fproduct%2Fq%2F_%2Fq_3.jpg%3Fdate%3D10%2F03%2F2024" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Hearty Earthy Hues Mix Valentine Bouquet</p>
+        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Know More
+        </button>
+      </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Full of Charm and brightness, this everlasting beauty with silvery white flowers and bright yellow centres is designed to give fresh summer vibes to your place. The small papery texture of petals around the golden yellow center creates an elegant and contemporary look. This tied arrangement of flowers will make a perfect display indoors and outdoors. Due to its long life, you can enjoy the essence of this summer beauty even in winters. Get these to add a bit of freshness to your living room, study or office cabin.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-outline-danger">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="width: 15rem;  ">
+      <img  src="https://res.cloudinary.com/makerinc/image/fetch/f_auto,q_auto,fl_preserve_transparency,c_fit,$bw_320,$bh_320,$dw_$bw_div_iw,$dh_$bh_div_ih/if_$dh_lt_$dw/w_$bw/if_else/h_$bh/if_end/dpr_1/https%3A%2F%2Fwww.whisperinghomes.com%2Fmedia%2Fcatalog%2Fproduct%2Fh%2Fe%2Fhearty_earthy_hues_mix_bouquet-hover_1.jpg%3Fdate%3D10%252F03%252F2024%26t%3D20231103" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Preserved Babysbreath - Light Purple</p>
+        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Know More
+        </button>
+      </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Introducing the Preserved Baby's Breath in Light Purple, a dainty and charming addition that brings a breath of delicate beauty to your decor.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-outline-danger">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="width: 15rem;  ">
+      <img  src="https://res.cloudinary.com/makerinc/image/fetch/c_fill,g_auto,f_auto,q_auto:best,fl_preserve_transparency,dpr_1,w_180/https%3A%2F%2Fwww.whisperinghomes.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fpreserved_eucalyptus-red_1_1.jpg%3Fdate%3D10%2F03%2F2024" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Preserved Eucalyptus Leaves - Red</p>
+        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Know More
+        </button>
+      </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            One of the finest and trendy grass options for home styling is the preserved eucalyptus. A gorgeous bundle of spiral and Populus leaves radiating a magnificent red color shade is perfect for adding a nice pop of color to the interior palette. Perfect to adorn in tall vases it can also be added to fall floral centerpieces to create a lively botanical display and fill up the empty corners of the home decor.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-outline-danger">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="width: 15rem;  ">
+      <img  src="https://res.cloudinary.com/makerinc/image/fetch/c_fill,g_auto,f_auto,q_auto:best,fl_preserve_transparency,dpr_1,w_180/https%3A%2F%2Fwww.whisperinghomes.com%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fe%2Fmedium_pampas_grass_beige_1__1_1.jpg%3Fdate%3D10%2F03%2F2024" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Melrose Gold Metal Table Lamp with White Shade</p>
+        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Know More
+        </button>
+      </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            An absolute epitome of Creativity meeting sophistication, this gorgeous Melrose lamp has an elegant, chic and unique design. It gives you a timeless retro vintage look and adorns your living space with a clean modern aesthetic touch. Made from metal, this table lamp showcases a glossy golden finish and a sturdy base for a look of intrigue and charm. The subtle drum shade fabric on top with golden metallic detailing on rims completes the look and makes it a crowd pleaser. Fashionable, simple and generous, this is not only a lighting table lamp, but also a work of art.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-outline-danger">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+      <!-- book display -->
+
+      <div class="container mt-5 mb-5">
+        <h1 class="text-center">
+          Browse From  
+          <small class="text-danger ">LAMPS &LIGHTS</small>
+        </h1>
+      </div>
+      <!-- display card -->
+      <div class="container-fluid d-flex flex-wrap justify-content-evenly align-items-center">
+          
+        <div class="card" style="width: 15rem;  ">
+            <img  src="https://res.cloudinary.com/makerinc/c_fill,g_auto,f_auto,q_auto:best,fl_preserve_transparency,dpr_1,w_375,h_375/maker-live/uploads/d4d11d709cc7980894bd9c05f12a2d03/78c307a9fb9f14d1341e0f687c40440e/lamps_111.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Modern Minimalist Style Golden Wall Sconce</p>
+              <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Know More
+              </button>
+            </div>
+          </div>
+
+          
+           <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        This elegant wall sconce has a beautiful design that will complement any décor.
+The sconce has a glass and gold metal curved arm and one light.
+Perfect for bedrooms or living rooms, this wall lamp provides soft, ambient lighting.
+Its golden finish adds a luxurious touch.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-danger">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+           
+
+          <div class="card" style="width: 15rem;  ">
+            <img  src="https://res.cloudinary.com/makerinc/c_fill,g_auto,f_auto,q_auto:best,fl_preserve_transparency,dpr_1,w_375,h_369/maker-live/uploads/d4d11d709cc7980894bd9c05f12a2d03/8e645f8d8d65d5105f27ac62731d6899/GARDEN_LANTERNS.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Melrose Gold Metal Table Lamp with White Shade</p>
+              <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Know More
+              </button>
+            </div>
+          </div>
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  An absolute epitome of Creativity meeting sophistication, this gorgeous Melrose lamp has an elegant, chic and unique design. It gives you a timeless retro vintage look and adorns your living space with a clean modern aesthetic touch. Made from metal, this table lamp showcases a glossy golden finish and a sturdy base for a look of intrigue and charm. The subtle drum shade fabric on top with golden metallic detailing on rims completes the look and makes it a crowd pleaser. Fashionable, simple and generous, this is not only a lighting table lamp, but also a work of art.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-outline-danger">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 15rem;  ">
+            <img  src="https://res.cloudinary.com/makerinc/c_fill,g_auto,f_auto,q_auto:best,fl_preserve_transparency,dpr_1,w_375,h_375/maker-live/uploads/d4d11d709cc7980894bd9c05f12a2d03/0a96a93e3f53e8a0ad21e8958d3daaf1/austrain_lamp_shade_2__1.jpg" alt="Book Cover" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">American Style Crystal Glass Shell Metal Wall Sconce</p>
+              <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Know More
+              </button>
+            </div>
+          </div>
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  The American Style Crystal Glass Shell Metal Wall Sconce is an exquisite decorative wall light that adds elegance to any space. With its crystal glass shell and metal frame, it radiates a sophisticated charm. Ideal for indoor use, it enhances bedrooms and living rooms with its warm and inviting wall sconce lighting.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-outline-danger">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 15rem;  ">
+            <img  src="https://res.cloudinary.com/makerinc/c_fill,g_auto,f_auto,q_auto:best,fl_preserve_transparency,dpr_1,w_375,h_375/maker-live/uploads/d4d11d709cc7980894bd9c05f12a2d03/2977b85e6595d9b0f8ce48174e4bb89a/retro_palladium_crystal_glass_chandelier_2__1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Delilah Blue Ceramic Table Lamp with White Shade</p>
+              <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Know More
+              </button>
+            </div>
+          </div>
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  The calming and serene appeal of the Delilah lamp makes it a perfect choice to incorporate into your home decor. A classic temple jar silhouette with beautiful grooves and a magnificent blend of white and blue hues, proudly display it as a living room lamp, bedroom lamp, or blend in with your contemporary lighting. One of the finest picks to combine opulence and classical styling to achieve a stylish design.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-outline-danger">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="card" style="width: 15rem;  ">
+            <img  src="https://res.cloudinary.com/makerinc/image/fetch/c_fill,g_auto,f_auto,q_auto:best,fl_preserve_transparency,dpr_1,w_375/https%3A%2F%2Fwww.whisperinghomes.com%2Fmedia%2Fcatalog%2Fproduct%2Fa%2Fm%2Famerican_style_crystal_glass_shell_metal_wall_sconce_hover_1.jpg%3Fdate%3D10%2F03%2F2024" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Half Moon Ring Wall Light</p>
+              <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Know More
+              </button>
+            </div>
+          </div>
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  The Half Moon Ring Wall Light is the perfect choice for those seeking a blend of modern design, functionality, and timeless charm in their lighting fixture.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-outline-danger">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+      
+      </div>
+
+<!-- footer -->
+
+<div class="container mt-5 ">
+  <div class="row ms-5 p-5 align-items-center">
+    <div class="col-lg-6">
+      <img width="120px" src="./images/travel-logo.png" alt="">
+      <p>Join over 1 million people and get exclusive travel tips, giveaways and more!
+      </p>
+    </div>
+    <div class="col-lg-6 d-flex">
+      <ul class="list-unstyled">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <div class="d-flex ms-5 me-5" style="height: 100px;">
+        <div class="vr"></div>
+      </div>
+      <ul class="list-unstyled">
+        <li>Categories</li>
+        <li>Plants</li>
+        <li>Lights</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+<!-- javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
